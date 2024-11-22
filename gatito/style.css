@@ -1,0 +1,75 @@
+body {
+    background-color: #000; /* Fondo negro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white; /* Texto blanco */
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 300px;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+
+.cell.X {
+    color: blue; /* X en azul */
+}
+
+.cell.O {
+    color: red; /* O en rojo */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#status {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#ai-message {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
